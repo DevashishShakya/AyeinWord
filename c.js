@@ -1,4 +1,4 @@
-sconst wordList = [
+const wordList = [
   "devashish",
   "killer",
   "murder",
