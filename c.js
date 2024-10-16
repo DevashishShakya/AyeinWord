@@ -1,4 +1,4 @@
-const wordList = [
+sconst wordList = [
   "devashish",
   "killer",
   "murder",
@@ -959,8 +959,8 @@ document.getElementById("guessForm").addEventListener("submit", function (e) {
 
   guessCount++;
   document.getElementById("guessCount").innerText = `Guesses: ${guessCount}`;
-  const rank = getRank(wordInput);
-  addGuessedWord(wordInput, rank);
+  const rank = getRank(wordInput.toLowerCase());
+  addGuessedWord(wordInput.toLowerCase(), rank);
   updateGuessList();
   document.getElementById("wordInput").value = "";
 });
